@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jana Sakr — Software Developer &amp; Full-Stack Engineer</title>
+    <meta
+      name="description"
+      content="Jana Sakr is a Software Developer and Full-Stack Engineer in Beirut, Lebanon, building modern, scalable, user-focused web applications."
+    />
+    <meta name="theme-color" content="#0B0C10" />
+    <meta property="og:title" content="Jana Sakr — Software Developer & Full-Stack Engineer" />
+    <meta
+      property="og:description"
+      content="Frontend craftsmanship meets backend engineering. Selected work, experience and contact."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Jana Sakr" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jana Sakr — Software Developer & Full-Stack Engineer" />
+    <meta
+      name="twitter:description"
+      content="Frontend craftsmanship meets backend engineering. Selected work, experience and contact."
+    />
+    <!--
+      Once the site has a domain, replace https://YOUR-DOMAIN and uncomment.
+      og.png should be 1200×630 and live in /public. Social sites need absolute URLs here.
+    <link rel="canonical" href="https://YOUR-DOMAIN/" />
+    <meta property="og:url" content="https://YOUR-DOMAIN/" />
+    <meta property="og:image" content="https://YOUR-DOMAIN/og.png" />
+    <meta name="twitter:image" content="https://YOUR-DOMAIN/og.png" />
+    -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jana Sakr",
+        "jobTitle": "Software Developer / Full-Stack Engineer",
+        "address": { "@type": "PostalAddress", "addressLocality": "Beirut", "addressCountry": "LB" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Lebanese University" },
+        "sameAs": ["https://www.linkedin.com/in/jana-sakr-6a0026244/", "https://github.com/JanaSaker"]
+      }
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply the saved/system theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem('js-theme')
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+        document.documentElement.setAttribute('data-theme', t)
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
